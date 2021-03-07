@@ -33,14 +33,14 @@ export const BlackKnight = () => <Piece color="black" piece="N" width={64} />;
 ## Properties
 
 ```typescript
-	/** Piece color */
-	color: "white" | "black";
-	/** Piece type */
-	piece: "K" | "Q" | "R" | "B" | "N" | "P";
-	/** Fill color. Defaults to "white" for white pieces and "black" for black pieces. */
-	fillColor?: string;
-	/** Contour color. Defaults to "black" for white pieces and "white" for black pieces. */
-	strokeColor?: string;
+/** Piece color */
+color: "white" | "black";
+/** Piece type */
+piece: "K" | "Q" | "R" | "B" | "N" | "P";
+/** Fill color. Defaults to "white" for white pieces and "black" for black pieces. */
+fillColor?: string;
+/** Contour color. Defaults to "black" for white pieces and "white" for black pieces. */
+strokeColor?: string;
 ```
 
 All other properties (including, notably, `width`, `height`, and `ref`) are forwarded to the `<svg>` element.
@@ -71,6 +71,6 @@ Also please respect the formatting (with prettier) and linting (with eslint) rul
 
 ## License
 
-This package is licensed under the MIT License.
+This package is licensed under the [MIT License](LICENSE).
 
-The original graphics which are available under multiple licenses. They are used under the 3-clause BSD licensein this package. Please see the file ORIGINAL-GRAPHICS-LICENSE.
+The original graphics are available under multiple licenses. They are used under the 3-clause BSD license in this package. Please see the [original license](ORIGINAL-GRAPHICS-LICENSE).
