@@ -1,0 +1,14 @@
+[browser]
+last 2 and_chr versions
+last 2 android versions
+last 2 ios versions
+ios 12.1 # Still supported on old devices
+last 2 chrome versions
+last 2 safari versions
+last 2 edge versions
+last 2 firefox versions
+firefox esr
+ie 11 # The one that makes the real difference
+
+[node]
+current node

@@ -1,0 +1,82 @@
+{
+  "name": "@chessire/pieces",
+  "version": "1.0.0",
+  "description": "React chess pieces component",
+  "keywords": [
+    "chess",
+    "piece",
+    "react",
+    "component"
+  ],
+  "files": [
+    "dist/**/*.js",
+    "dist/esm/*.d.ts",
+    "README.md",
+    "ORIGINAL-GRAPHICS-LICENSE"
+  ],
+  "scripts": {
+    "build": "rimraf dist && cross-env BROWSERSLIST_ENV=browser rollup --config rollup.config.js",
+    "generate": "BROWSERSLIST_ENV=node babel-node -x .ts scripts/download-and-generate.ts",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc -p . --noEmit",
+    "lint": "eslint"
+  },
+  "author": "Fatih Aygün <cyco130@gmail.com>",
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "dependencies": {
+    "@types/react": "^16.8 || ^17"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.8",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
+    "@types/jsdom": "^16.2.6",
+    "@types/node-fetch": "^2.5.8",
+    "@types/prettier": "^2.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "@wessberg/rollup-plugin-ts": "^1.3.8",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-only-warn": "^1.0.2",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unicorn": "^28.0.2",
+    "husky": "^4.3.8",
+    "jsdom": "^16.4.0",
+    "lint-staged": "^10.5.4",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.40.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook-css-modules-preset": "^1.0.6",
+    "typescript": "^4.2.3"
+  }
+}
