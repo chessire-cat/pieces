@@ -15,15 +15,13 @@ SVG graphics for the pieces are automatically converted from [Wikimedia Commons]
 
 ## Demo
 
-* [Storybook deocumentation](https://chessire-cat.github.io/pieces/?path=/docs/piece--white-king-story)
+* [Storybook documentation](https://chessire-cat.github.io/pieces/?path=/docs/piece--white-king-story)
 
-## Installing
+## Installation and usage
 
 ```shell
 $ npm install @chessire/pieces
 ```
-
-## Usage
 
 ```tsx
 import { Piece } from "@chessire/pieces"; // Default import also works
@@ -34,13 +32,13 @@ export const BlackKnight = () => <Piece color="black" piece="N" width={64} />;
 ## Properties
 
 ```typescript
-	// Piece color
+	/** Piece color */
 	color: "white" | "black";
-	// Piece type
+	/** Piece type */
 	piece: "K" | "Q" | "R" | "B" | "N" | "P";
-	// Fill color. Defaults to "white" for white pieces and "black" for black pieces.
+	/** Fill color. Defaults to "white" for white pieces and "black" for black pieces. */
 	fillColor?: string;
-	// Contour color. Defaults to "black" for white pieces and "white" for black pieces.
+	/** Contour color. Defaults to "black" for white pieces and "white" for black pieces. */
 	strokeColor?: string;
 ```
 
@@ -48,7 +46,7 @@ All other properties (including, notably, `width`, `height`, and `ref`) are forw
 
 ## Contributing
 
-Clone the repo, `npm install`, make your changes, and send a pull request. But please note in advance that I am **not** interested in adding fairy chess pieces as of yet.  `npm run generate` regenerates the graphics in `src/pieces.tsx` but because the script makes a lot of assumptions, the process should not be considered fully automatic. So please make sure to run `npm run storyboard` to visually inspect each piece.
+Clone the repo, `npm install`, make your changes, and send a pull request. But please note in advance that I am **not** interested in adding fairy chess pieces as of yet.  `npm run generate` downloads and regenerates the graphics in `src/pieces.tsx` but because the script makes a lot of assumptions, the process should not be considered fully automatic. So please make sure to run `npm run storyboard` to visually inspect each piece.
 
 Also please respect the formatting (with prettier) and linting (with eslint) rules. There are git hooks in place to facilitate this.
 
