@@ -15,7 +15,7 @@ SVG graphics for the pieces are automatically converted from [Wikimedia Commons]
 
 ## Demo
 
-TODO: Add demo
+* [Storybook deocumentation](https://chessire-cat.github.io/pieces/?path=/docs/piece--white-king-story)
 
 ## Installing
 

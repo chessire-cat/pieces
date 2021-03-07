@@ -19,6 +19,7 @@
     "generate": "BROWSERSLIST_ENV=node babel-node -x .ts scripts/download-and-generate.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
     "prepublishOnly": "npm run build",
     "typecheck": "tsc -p . --noEmit",
     "lint": "eslint"
@@ -65,6 +66,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^28.0.2",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
     "jsdom": "^16.4.0",
     "lint-staged": "^10.5.4",
